@@ -129,7 +129,7 @@ header {
 }
 
 .header_link a:last-child {
-  margin: 0 0 0 1rem;
+  margin: 0 0 0 3rem;
 }
 
 .navigation_root {
@@ -553,11 +553,22 @@ video {
 }
 
 .flex_investment .box {
-  flex-basis: 18rem;
+  flex-basis: 17rem;
   margin-bottom: 5rem;
   padding: 0 2rem 0 3rem;
   line-height: 1.8rem;
   border-left: 0.2rem solid #fff;
+}
+
+.flex_investment .box:last-child {
+  border-right: 0.2rem solid #fff;
+}
+
+.flex_investment h5{
+  text-align: right;
+  font-size: 10rem;
+  font-weight: bold;
+  color: var(--font-color-4);
 }
 
 @media (max-width: 980px)

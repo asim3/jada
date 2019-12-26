@@ -93,7 +93,7 @@ function add_video_to_home() {
   const video_root = document.getElementById("video_root");
   if (video_root) {
     const video = document.createElement("video");
-    video.src = "../static/video/video_2.mp4";
+    video.src = "https://jada3.herokuapp.com/static/static/video/video_2.mp4";
     video.type = "video/mp4";
     video.controls = true;
     video.muted = true;
