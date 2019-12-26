@@ -19,6 +19,10 @@
   font-family: cairo-bold, TimesNewRoman, sans-serif;
 }
 
+.regular {
+  font-family: cairo-regular, TimesNewRoman, sans-serif;
+}
+
 a {
   color: inherit!important;
   text-decoration: none!important;
@@ -66,10 +70,17 @@ head, body {
 
 header {
   display: flex;
+  padding-top: 5rem;
+  height: 20rem;
   color: var(--font-color-3);
   fill: var(--font-color-3);
-  background: var(--bg-color-1);
+  background: var(--bg-color-footer);
+}
+
+.header_line_above_home {
+  height: 1rem;
   background: linear-gradient(90deg, var(--bg-color-1) 0%, var(--bg-color-3) 100%);
+
 }
 
 .home_header_banner {
@@ -92,6 +103,7 @@ header {
 }
 
 .header_logo {
+  margin: 0 10rem;
   width: 20rem;
   height: 10rem;
   background-image: url(./logos/logo.png);
@@ -106,7 +118,7 @@ header {
 }
 
 .header_link {
-  margin: 3rem 4rem 0 auto;
+  margin: 1rem 4rem 0 auto;
   z-index: 9;
 }
 
@@ -114,6 +126,10 @@ header {
   margin: 0 0.5rem;
   font-size: 1rem;
   color: var(--font-color-3);
+}
+
+.header_link a:last-child {
+  margin: 0 0 0 1rem;
 }
 
 .navigation_root {
@@ -299,6 +315,10 @@ h2 {
   font-size: 2rem;
 }
 
+.board_members {
+  font-family: cairo-bold, TimesNewRoman, sans-serif;
+}
+
 .board_members h2 {
   padding: 2rem 0;
   color: var(--font-color-1);
@@ -311,8 +331,8 @@ h2 {
 }
 
 .member_card_flex > div {
-  flex-basis: 25rem;
-  margin: 2rem 4rem 2rem 0rem;
+  flex-basis: 28rem;
+  margin-bottom: 10rem;
   font-size: 1.8rem;
   line-height: 2rem;
   cursor: pointer;
@@ -333,10 +353,16 @@ h2 {
   background-position: center;
 }
 
-.member_card_flex span:first-child, .h2_bold {
+.h2_bold {
   display: block;
   padding: 1rem 0;
   font-family: cairo-bold, TimesNewRoman, sans-serif;
+}
+
+.member_card_flex span:last-child {
+  display: block;
+  padding: 1rem 0;
+  font-family: cairo-regular, TimesNewRoman, sans-serif;
 }
 
 .bg_dark {
@@ -497,7 +523,7 @@ ul {
 }
 
 .company_img {
-  padding-top: 13rem;
+  padding-top: 20rem;
   width: 15rem;
   background-size: contain;
   background-repeat: no-repeat;
@@ -514,6 +540,24 @@ video {
   margin: 3rem auto;
   width: 80vw;
   height: 40rem;
+}
+
+.header_menu {
+  display: none;
+}
+
+.flex_investment {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 5rem;
+}
+
+.flex_investment .box {
+  flex-basis: 18rem;
+  margin-bottom: 5rem;
+  padding: 0 2rem 0 3rem;
+  line-height: 1.8rem;
+  border-left: 0.2rem solid #fff;
 }
 
 @media (max-width: 980px)
@@ -542,6 +586,18 @@ video {
   .member_img {
     padding: 0;
   }
+  .header_logo {
+    margin: 0;
+  }
+  .header_menu {
+    display: block;
+  }
+  .header_link a {
+    display: none;
+  }
+  .header_link a:last-child {
+    display: inline;
+  }
 }
 
 
@@ -551,7 +607,7 @@ video {
     margin: 3rem 2rem;
   }
   .header_link {
-    margin: 3rem 0 0 auto;
+    margin: 1rem 2rem 0 auto;
   }
   .side_navigation {
     top: 0rem;

@@ -118,19 +118,23 @@ window.onload = function() {
     toggle_side_navigation();
   });
 
-  document.getElementById("ln_ar")
-    .addEventListener("click", function(event) {
+  const ln_ar = document.getElementById("ln_ar")
+  if(ln_ar) {
+    ln_ar.addEventListener("click", function(event) {
       let href = window.location.href;
       href = href.replace("/EN/", "/AR/")
       window.location.href = href
     });
+  }
 
-  document.getElementById("ln_en")
-    .addEventListener("click", function(event) {
+  const ln_en = document.getElementById("ln_en")
+  if(ln_en) {
+    ln_en.addEventListener("click", function(event) {
       let href = window.location.href;
       href = href.replace("/AR/", "/EN/")
       window.location.href = href
     });
+  }
   
   setTimeout(add_video_to_home, 0);
 };

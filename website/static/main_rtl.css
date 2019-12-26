@@ -12,7 +12,12 @@ body {
 }
 
 .header_link {
-  margin: 3rem auto 0 4rem;
+  margin: 1rem auto 0 4rem;
+}
+
+
+.header_link a:last-child {
+  margin: 0 1rem 0 0;
 }
 
 .box_2_column .box {
@@ -38,13 +43,15 @@ body {
   left: auto;
 }
 
-.member_card_flex > div {
-  margin: 2rem 0rem 2rem 4rem;
-}
-
 #company_investments .box {
   margin: 0 0 5rem auto;
   padding: 0 0 0 7rem;
+}
+
+.flex_investment .box {
+  padding: 0 3rem 0 2rem;
+  border-left: none;
+  border-right: 0.2rem solid #fff;
 }
 
 @media (max-width: 980px)
@@ -57,7 +64,7 @@ body {
 @media (max-width: 600px)
 {
   .header_link {
-    margin: 3rem 0 0 auto;
+    margin: 1rem auto 0 2rem;
   }
   .home_header_banner {
     right: -10rem;

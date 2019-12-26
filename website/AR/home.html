@@ -11,6 +11,7 @@
 </head>
 <body>
 <div class="app_root">
+  <div class="header_line_above_home"></div>
   <header class="header_at_home">
     <svg id="show_side_navigation" class="header_menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8">
       <path d="M0 0v1h8v-1h-8zm0 2.97v1h8v-1h-8zm0 3v1h8v-1h-8z" transform="translate(0 1)" />
@@ -19,8 +20,10 @@
     <div class="header_logo"></div>
     
     <div class="header_link">
-      <a id="ln_en" href="#">EN</a>
-      <a id="ln_ar" href="#">عربي</a>
+      <a class="bold" href="./home.html">‫الرئيسية‬</a>
+      <a href="./board_members.html">أعضاء مجلس الإدارة والرؤساء التنفيذيون</a>
+      <a href="./investments.html">‫استثماراتنا‬</a>
+      <a id="ln_en" href="#">‫‪ENGLISH‬‬</a>
     </div>
   </header>
   
@@ -29,28 +32,21 @@
       <div id="side_navigation_close" class="side_navigation_close">×</div>
 
       <strong><a href="./home.html">‫الرئيسية‬</a></strong>
-      <a href="./home.html#about">‫عن‬ ‫جدا‬</a>
-      <a href="./investments.html">‫استثماراتنا‬</a>
       <a href="./board_members.html">أعضاء مجلس الإدارة والرؤساء التنفيذيون</a>
-      <a href="./mission.html">‫مهمتنا‬</a>
-      <a href="./mission.html#vision">‫رؤية‬ ‫‪2030‬‬</a>
-      <a href="./mission.html#investment">‫معايير‬ ‫استثماراتنا‬</a>
-      <a href="./mission.html#partnership">‫شراكاتنا‬</a>
-      <a href="./mission.html#partnership">‫نموذج‬ ‫التشغيل‬ </a>
+      <a href="./investments.html">‫استثماراتنا‬</a>
       <a href="./investments.html#sendemail">‫تواصل‬ ‫معنا‬</a>
     </div>
   </div>
 
 
-  <div class="box_2_column bg_width home_banner">
+  <div class="box_1_column bg_width">
     <div class="box">
-      <h1 class="d-none">Enabling Investment in the Land of Opportunities</h1>
       «جدا» هي شركة صندوق الصناديق التي أسسها صندوق الاستثمارات العامة لدعم عملية تطوير بيئة الاستثمار في قطاع الملكية الخاصة ورأس المال الجريء بهدف ضمان النجاح طويل الأجل للمنشآت الصغيرة والمتوسطة في المملكة العربية السعودية. سترفع شركة جدا من مساهمة القطاع الخاص في الناتج المحلي الإجمالي وتنويع القاعدة الاقتصادية للمملكة، إضافةً إلى خلق الكثير من فرص العمل الجديدة.
     </div>
-    <div class="box">
-      <div class="home_header_banner"></div>
-    </div>
   </div>
+
+
+  <div id="video_root"></div>
 
 
   <div id="about" class="bg_dark">
@@ -69,61 +65,128 @@
   </div>
 
 
-  <div class="home_banner_img"></div>
+
+  <div class="box_2_column bg_width">
+    <div class="box">
+      <h2>الرؤية</h2>
+        أن نكون المحفز المالي للنمو في قطاع إدارة الاستثمارات السعودية في الملكية الخاصة ورأس المال الجريء وتطوير مجتمع إقليمي مزدهر لمدراء الصناديق 
+    </div>
+
+    <div class="box">
+      <h2>الرسالة</h2>
+        أن نقدم رأس المال الاستثماري للمنشآت الصغيرة والمتوسطة السعودية من خلال مدراء صناديق الملكية الخاصة ورأس المال الجريء على أسس تجارية
+    </div>
+
+    <div class="box">
+      <h2>الأهداف</h2>
+      <ul>
+        <li>تعزيز الابتكار المحلي وريادة الأعمال</li>
+        <li>جذب الشركات الواعدة والحديثة إلى المملكة</li>
+        <li>تشجيع نمو القطاعات ذات الأولوية في رؤية 2030</li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <h2>المبادئ التجارية:</h2>
+      ضمان الاستدامة المالية والمنفعة الاقتصادية لاستثمارات صندوق الصناديق 
+    </div>
+
+    <div class="box">
+      <h2>المبادئ الاقتصادية:</h2>
+      أن ندعم تحقيق أولويات المملكة الاقتصادية ذات الصلة بنمو المنشآت الصغيرة والمتوسطة
+    </div>
+  </div>
+
+
+  <div id="investment" class="bg_dark">
+    <div class="bg_width">
+      <h2>المعايير الاستثمارية</h2>
+
+      <div class="flex_investment">
+        <div class="box">
+          تمارس شركة جدا أعمالها وفقًا لقواعد الشفافية والحوكمة المشددة
+        </div>
+        <div class="box">
+          تتبنى شركة جدا أفضل الممارسات العالمية فيما يتعلق بتنظيم الصناديق ومستنداتها
+        </div>
+        <div class="box">
+          تسعى شركة جدا إلى الشراكة مع مدراء صناديق ذوي خبرة استثمارية ناجحة – محلياً وإقليمياَ ودولياً والتزام للسوق السعودية 
+        </div>
+        <div class="box">
+          وكذلك مدراء صناديق الاستثمار الحديثة ممن لديهم الخبرة الكافية بالسوق المحلية
+        </div>
+        <div class="box">
+          تمارس شركة جدا أعمالها وفق ضوابط مهنية عالية بهدف ضمان الاستدامة لبرامجها الاستثمارية
+        </div>
+        <div class="box">
+          تركز شركة جدا على تحقيق العوائد الاقتصادية المجدية من استثمارات إضافة إلى ذلك، تهدف الشركة إلى تنمية وتعزيز نمو المنشآت الصغيرة والمتوسطة لتساهم في تنويع الناتج المحلي الإجمالي بشكل أكبر وخلق فرص وظيفية أفضل وأكثر
+        </div>
+        <div class="box">
+          مدراء صناديق الاستثمار المؤهلين سيخضعون لإجراءات قانونية ومهنية وسيعمل البرنامج على دعم ثلاث فئات أصول رئيسية:
+          <br />
+          • الملكية الخاصة
+          <br />
+          • رأس المال الجريء
+          <br />
+          • الاستثمارات التأسيسية
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="partnership" class="box_1_column bg_width">
+    <h2 style="padding-top: 7rem;">معايير الشراكة</h2>
+      تُعطى الأولوية للصناديق التي تهتم بقطاع إدارة الاستثمار في الملكية الخاصة ورأس المال الجريء في المملكة، حيث تشير الأبحاث إلى أنها بحاجة إلى الدعم المبكر من أجل النمو إلى الحد الذي يمكن أن تُسهم فيه بشكل كبير في تطوير المنشآت الصغيرة والمتوسطة في المملكة. وتُظهر الدراسات أن التدخل الحكومي كان جزءًا لا يتجزأ من نجاح المنشآت الصغيرة والمتوسطة في أوروبا وكوريا الجنوبية وسنغافورة، وهي أسواق مشابهة للسوق السعودية.
+    
+    
+    <h2 style="padding-top: 7rem;">النموذج التشغيلي</h2>
+      يوفر نموذج الحوكمة في شركة جدا قدرًا كبيرًا من الاستقلالية التي تهدف إلى ضمان مرونة عملية صنع القرار مما يتيح الفرصة لفريق إدارة جدا للتعاطي مع ظروف السوق المتغيرة بالسرعة اللازمة.
+
+  </div>
+
+
+
+
+
+  <div id="sendemail" class="form_banner">
+    <div class="box">
+      <h2>تواصل‬ ‫معنا‬</h2>
+
+      <form 
+        action="mailto:info@jada.com.sa" method="post"
+        enctype="text/plain" class="input-group" style="display: flex;">
+        <div class="form_column">
+          <input type="text" name="name" placeholder="الإسم">
+          <input type="text" name="mail" placeholder="‫البريد‬ ‫الإلكتروني‬">
+          <input type="text" name="mobile" placeholder="‫رقم‬ ‫الجوال‬">
+          <button class="button" type="submit">‫أرسل‬ ‫رسالتك‬</button>
+        </div>
+        <div class="form_column">
+          <textarea name="comment" rows="6" >‫رسالتك‬</textarea>
+        </div>
+      </form>
+    </div>
+    <div class="form_img">
+      <iframe  
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.6077836337495!2d46.6378859849995!3d24.740342084110615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2ee288bf888b33%3A0x703f46c8c7bcc5a0!2z2LXZhtiv2YjZgiDYp9mE2KfYs9iq2KvZhdin2LHYp9iqINin2YTYudin2YXYqQ!5e0!3m2!1sar!2ssa!4v1576856264466!5m2!1sar!2ssa" 
+        frameborder="0" 
+        style="border:0;" 
+        allowfullscreen="">
+      </iframe>
+    </div>
+  </div>
+
+
+
+
   
-  
-  <div id="video_root"></div>
 
 
   <footer>
-    <div class="footer_flex">
-      <div class="d-none" style="flex-basis: 20rem">
-        Get the latest News
-        <form action="" method="POST" class="input-group">
-          <input type="email" class="form-control" placeholder="Email Address">
-          <div class="input-group-append">
-            <button class="btn btn-light" type="submit">SIGN UP</button>
-          </div>
-        </form>
-
-        <br />
-        FOLLOW US
-        <br />
-        <a href="#">instagram</a>
-        .
-        <a href="#">youtube</a>
-        .
-        <a href="#">twitter</a>
-      </div>
-      
-      <div style="flex-basis: 15rem;line-height: 1.5rem;">
-        <strong><a href="./home.html">‫الرئيسية‬</a></strong> <br />
-        <a href="./home.html#about">‫عن‬ ‫جدا‬</a> <br />
-        <a href="./investments.html">‫استثماراتنا‬</a> <br />
-        <a href="./board_members.html">أعضاء مجلس الإدارة والرؤساء التنفيذيون</a> <br />
-        <a href="./mission.html">‫مهمتنا‬</a> <br />
-        <a href="./mission.html#vision">‫رؤية‬ ‫‪2030‬‬</a> <br />
-      </div>
-      
-      <div style="flex-basis: 9rem;line-height: 1.5rem;">
-        <a href="./mission.html#investment">‫معايير‬ ‫استثماراتنا‬</a> <br />
-        <a href="./mission.html#partnership">‫شراكاتنا‬</a> <br />
-        <a href="./mission.html#partnership">‫نموذج‬ ‫التشغيل‬ </a> <br />
-        <a href="./investments.html#sendemail">‫تواصل‬ ‫معنا‬</a> <br />
-      </div>
-      
-      <div class="d-none" style="flex-basis: 20rem">
-        CONTACT INFORMATION
-        <br />
-        <br />
-        Lorem Ipsum is simply dummy text of the printing and
-        typesetting industry. Lorem Ipsum has been the industry's
-        standard dummy text ever since the 1500s, when an unknown
-        printer took a galley of type and scrambled it to make a type
-        specimen book. It has survived not only five centuries, but also
-        the leap into electronic typesetting.
-      </div>
-    </div>
+    <a class="bold" href="./home.html">‫الرئيسية‬</a>
+    <a href="./board_members.html">أعضاء مجلس الإدارة والرؤساء التنفيذيون</a>
+    <a href="./investments.html">‫استثماراتنا‬</a>
     
     <div class="footer_end">
       جميع الحقوق محفوظة لجدا . Jada 2019
