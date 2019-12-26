@@ -74,7 +74,13 @@ header {
   height: 20rem;
   color: var(--font-color-3);
   fill: var(--font-color-3);
-  background: var(--bg-color-footer);
+  background-color: var(--bg-color-footer);
+  background-image: url(./images/header.svg);
+  background-position: center;
+  background-position-x: 7rem;
+  background-position-y: -20rem;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header_line_above_home {
@@ -366,8 +372,21 @@ h2 {
 }
 
 .bg_dark {
+  position: relative;
   color: var(--font-color-3);
   background: var(--bg-color-2);
+}
+
+.bg_dark::after {
+  content: " ";
+  position: absolute;
+  top: -10rem;
+  right: -16rem;
+  width: 50rem;
+  height: 50rem;
+  background: url(./images/bg_dark.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .bg_dark h2 {
@@ -553,15 +572,41 @@ video {
 }
 
 .flex_investment .box {
+  position: relative;
   flex-basis: 17rem;
   margin-bottom: 5rem;
   padding: 0 2rem 0 3rem;
   line-height: 1.8rem;
   border-left: 0.2rem solid #fff;
+  overflow: hidden;
 }
 
 .flex_investment .box:last-child {
   border-right: 0.2rem solid #fff;
+}
+
+.flex_investment .box::after {
+  content: " ";
+  position: absolute;
+  top: 12rem;
+  left: -2rem;
+  width: 3rem;
+  height: 3rem;
+  background: var(--font-color-4);
+  transform: rotate(45deg);
+}
+
+.flex_investment .box::before {
+  content: " ";
+  position: absolute;
+  top: 12.7rem;
+  left: -1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: var(--bg-color-2);
+  border: 0.2rem solid #fff;
+  transform: rotate(45deg);
+  z-index: 1;
 }
 
 .flex_investment h5{
@@ -569,6 +614,10 @@ video {
   font-size: 10rem;
   font-weight: bold;
   color: var(--font-color-4);
+}
+
+.flex_investment h5 {
+  text-align: left;
 }
 
 @media (max-width: 980px)
@@ -614,6 +663,13 @@ video {
 
 @media (max-width: 600px)
 {
+  header {
+    background-position: center;
+    background-position-y: 1rem;
+    background-position-x: 10rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .header_menu {
     margin: 3rem 2rem;
   }
@@ -666,9 +722,6 @@ video {
   }
   .form_img iframe {
     width: 100%;
-  }
-  #investment .box {
-    padding: 0;
   }
   #company_investments .box {
     padding: 0!important;
